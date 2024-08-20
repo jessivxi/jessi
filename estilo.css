@@ -1,20 +1,18 @@
-body {
-    /* margem externa(margin) e interna(padding) */
+/* body {
+     margem externa(margin) e interna(padding) 
     margin: 0;
     padding: 0;
 }
-.site { 
+.site {
     position: relative;
     width: 1000px;
     height: auto;
     margin: auto;
-    
 }
 .topo {
     position: relative;
     width: 100%;
     height: 150px;
-    
 }
 
 .logo {
@@ -22,29 +20,21 @@ body {
     margin: auto;
     height: 150px;
     width: 132.5px;
-    
 }
 .menu {
-    position: relative;
+    position: flex;
     width: 100%;
     height: 50px;
     background-color: hsl(315, 46%, 72%);
-
 }
 
 .menu ul {
     display: flex;
-    /* oculta icone de macador da listar */
+     oculta icone de macador da listar 
     list-style: none;
-    /* retirar o espeçamento do marcadores da lista */
+     retirar o espeçamento do marcadores da lista 
     padding-left: 0;
     margin: 0;
-
-}
-
-.menu ul li{
-    float: left;
-    padding: 15px 30px;
 
 }
 
@@ -53,8 +43,6 @@ body {
     padding: 15px 30px;
     color:inherit;
     text-decoration: none;
-
-    
 }
 
 .menu ul li a:hover {
@@ -67,15 +55,13 @@ body {
     position: relative;
     width: 100%;
     height: 524px;
- 
 }
 .conteudo {
     position: relative;
     width: 100%;
     height: 500px;
-    /* duas medidas no margin: eixo bertical e eixo horizontal */
+     duas medidas no margin: eixo bertical e eixo horizontal 
     margin: 50px 0;
-    
 }
 .box {
     position: relative;
@@ -83,37 +69,18 @@ body {
     height: 500px;
     float: left;
     margin-right:50px;
-    border: 1px pink 
+    border: 1px pink;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: -50px 40px 90px 
-    
-
+    box-shadow: -50px 40px 90px;
 }
 .box img{
     width: 100px;
     height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
-
- 
-
 }
-.box {
-    position: relative;
-    width: 300px;
-    height: 500px;
-    float: left;
-    margin-right:50px 
-    border: 1px pink 
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: -50px 40px 90px 
-}
-
-
-/* pega todas as imagens dentro da dib box */
+ pega todas as imagens dentro da dib box 
 .box:last-child {
     margin-right: 0;
     
@@ -124,16 +91,128 @@ body {
     height: 200px;
     background-color: palevioletred;
 
+} */
+
+html {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.site1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
 
+.logo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 150px;
+    margin: 10px 0 10px 0;
+}
 
+.container-logo1 {
+    width: 100px;
+    height: auto;
+}
 
+.img-logo1 {
+    width: 100px;
+    height: auto;
+}
 
+.banner1 {
+    width: 50%;
+    height: 500px;
+    background-color: brown;
+    margin-bottom: 30px;
+}
 
+.menu1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #FF93D2;
 
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+    }
 
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
 
+.img1 {
+    width: 100%;
+    height: 450px;
+    background-color: blueviolet;
+    /* background-image: url(img/helloKittyHero.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
 
+.img-banner1 {
+    width: 100%;
+    height: 100%;
+}
 
+.box-collection1 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 500px;
+}
 
+.left-box1 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+    min-height: 400px;
+    height: fit-content;
+    width: 30%;
+    border: 3px solid #FF93D2;
+}
+
+.center-box1 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+    min-height: 400px;
+    height: fit-content;
+    width: 30%;
+    border: 3px solid #FF93D2;
+}
+
+.right-box1 {
+    display: flex;
+    justify-content:    center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 400px;
+    height: fit-content;
+    width: 30%;
+    border: 3px solid #FF93D2;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0px 0px 30px grey;
+}
+
+.format-img1 {
+    max-width: 250px;
+    max-height: 250px;
+}
